@@ -3,73 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio muslih khairu alief r</title>
+    <title>My Portofolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>My muslih</h1>
-        <p>Web Developer & Designer</p>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    
-    <div class="container">
-        <section id="home">
-            <h2><i class="fas fa-laptop-code"></i> Welcome to my Portfolio</h2>
-            <p>Hi! I'm a passionate developer creating meaningful digital experiences.</p>
-        </section>
+    <div class="page-wrapper">
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <img src="https://via.placeholder.com/60" alt="Logo" class="sidebar-logo">
+                <h3>Muslih Dev</h3>
+            </div>
+            <ul>
+                <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#categories" class="nav-link"><i class="fas fa-th-list"></i> Categories</a></li>
+                <li><a href="projects.html" class="nav-link external-link"><i class="fas fa-project-diagram"></i> Projects</a></li>
+                <li><a href="about.html" class="nav-link external-link"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="contact.html" class="nav-link external-link"><i class="fas fa-envelope"></i> Contact</a></li> </ul>
+        </nav>
         
-        <section id="projects-preview">
-            <h2><i class="fas fa-project-diagram"></i> Featured Projects</h2>
-            <p class="section-intro">Here are some of my recent works. Visit the projects page to see my complete portfolio.</p>
-            
-            <div class="project-list preview">
-                <div class="project-card">
-                    <div class="project-img"></div>
-                    <div class="project-info">
-                        <h3>Project One</h3>
-                        <p>A brief description of the first project and the technologies used.</p>
-                    </div>
-                </div>
+        <div class="main-content-area">
+            <div class="container">
+                <section id="home" class="portfolio-section active">
+                    <h2><i class="fas fa-laptop-code"></i> Welcome to my Portfolio</h2>
+                    <p>Hi! I'm a passionate developer creating meaningful digital experiences.</p>
+                </section>
+
+                <section id="categories" class="portfolio-section">
+                    <h2><i class="fas fa-th-list"></i> Project Categories</h2>
+                    <p>Here are the different categories of projects I work on:</p>
+                    <ul>
+                        <li>Web Development</li>
+                        <li>Mobile Applications</li>
+                        <li>UI/UX Design</li>
+                        <li>Graphic Design</li>
+                        <li>E-commerce Solutions</li>
+                    </ul>
+                </section>
                 
-                <div class="project-card">
-                    <div class="project-img"></div>
-                    <div class="project-info">
-                        <h3>Project Two</h3>
-                        <p>A brief description of the second project and the technologies used.</p>
+                <section id="projects-preview" class="portfolio-section">
+                    <h2><i class="fas fa-project-diagram"></i> Featured Projects</h2>
+                    <p class="section-intro">Here are some of my recent works. Visit the projects page to see my complete portfolio.</p>
+                    
+                    <div class="project-list preview">
+                        <div class="project-card">
+                            <div class="project-img"></div>
+                            <div class="project-info">
+                                <h3>Project One</h3>
+                                <p>A brief description of the first project and the technologies used.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="project-card">
+                            <div class="project-img"></div>
+                            <div class="project-info">
+                                <h3>Project Two</h3>
+                                <p>A brief description of the second project and the technologies used.</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                    
+                    <div class="view-all-container">
+                        <a href="projects.html" class="view-all-button">
+                            <span>View All Projects</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </section>
+                
+                <section id="contact" class="portfolio-section">
+                    <h2><i class="fas fa-envelope"></i> Contact Me</h2>
+                    <p>Feel free to reach out if you'd like to collaborate or have any questions!</p>
+                    <div style="text-align: center; margin-top: 20px;">
+                        <a href="mailto:your.email@example.com" class="contact-button">
+                            <i class="fas fa-paper-plane"></i> Send Email
+                        </a>
+                    </div>
+                </section>
             </div>
             
-            <div class="view-all-container">
-                <a href="projects.html" class="view-all-button">
-                    <span>View All Projects</span>
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
-        </section>
-        
-        <section id="contact">
-            <h2><i class="fas fa-envelope"></i> Contact Me</h2>
-            <p>Feel free to reach out if you'd like to collaborate or have any questions!</p>
-            <div style="text-align: center; margin-top: 20px;">
-                <a href="mailto:your.email@example.com" class="contact-button">
-                    <i class="fas fa-paper-plane"></i> Send Email
-                </a>
-            </div>
-        </section>
+            <footer>
+                <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+            </footer>
+        </div>
     </div>
-    
-    <footer>
-        <p>&copy; 2023 My Portfolio. All rights reserved.</p>
-    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
